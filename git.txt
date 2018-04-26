@@ -1,0 +1,29 @@
+1) How do you merge selective files with git-merge?
+
+Lets say you have the master, exp1, and exp2 branches. You want to merge one file from each of the experimental branches into master. I would do something like this:
+
+git checkout master
+git checkout exp1 path/to/file_a
+git checkout exp2 path/to/file_b
+
+# save these files as a stash
+git stash
+# merge stash with master
+git merge stash
+
+@source: https://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge
+
+2) How to remove files from git staging area?
+
+You can unstage files from the index using
+
+git reset HEAD -- path/to/file
+
+Just like git add, you can unstage files recursively by directory and so forth, so to unstage everything at once, run this from the root directory of your repository:
+
+git reset HEAD -- .
+
+Also, for future reference, the output of git status will tell you the commands you need to run to move files from one state to another.
+
+source: https://stackoverflow.com/questions/19730565/how-to-remove-files-from-git-staging-area/39454637?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
