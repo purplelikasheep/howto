@@ -27,3 +27,20 @@ Also, for future reference, the output of git status will tell you the commands 
 
 source: https://stackoverflow.com/questions/19730565/how-to-remove-files-from-git-staging-area/39454637?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 
+4) When VM raises the following error
+
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+Could not open a connection to your authentication agent
+
+eval `ssh-agent -s`
+ssh-add .ssh/bitbucket
+ssh -T git@bitbucket.org
+
+
+https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
