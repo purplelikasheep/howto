@@ -44,3 +44,19 @@ ssh -T git@bitbucket.org
 
 
 https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+5) How to fetch all branches
+
+git fetch --all
+
+https://stackoverflow.com/questions/10312521/how-to-fetch-all-git-branches?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+
+https://gist.github.com/grimzy/a1d3aae40412634df29cf86bb74a6f72
+
+6)
+
+
