@@ -1,0 +1,7 @@
+1) edit pdfs 
+
+pdfmod
+
+sudo dnf install pdfmod 
+
+https://fedoramagazine.org/pdf-modification-tools-fedora/

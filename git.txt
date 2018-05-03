@@ -39,7 +39,7 @@ and the repository exists.
 Could not open a connection to your authentication agent
 
 eval `ssh-agent -s`
-ssh-add .ssh/bitbucket
+ssh-add /home/rviegas/.ssh/bitbucket
 ssh -T git@bitbucket.org
 
 
@@ -57,6 +57,14 @@ git pull --all
 
 https://gist.github.com/grimzy/a1d3aae40412634df29cf86bb74a6f72
 
-6)
+6) Rename branch
+
+git branch -m old_branch new_branch         # Rename branch locally    
+
+git push origin :old_branch                 # Delete the old branch    
+
+git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
+
+https://www.w3docs.com/snippets/git/how-to-rename-git-local-and-remote-branches.html
 
 
