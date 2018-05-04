@@ -67,4 +67,9 @@ git push --set-upstream origin new_branch   # Push the new branch, set local bra
 
 https://www.w3docs.com/snippets/git/how-to-rename-git-local-and-remote-branches.html
 
+7) Change remote directory 
+
+git remote set-url
+
+https://help.github.com/articles/changing-a-remote-s-url/
 
