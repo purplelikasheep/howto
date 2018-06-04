@@ -73,3 +73,32 @@ git remote set-url
 
 https://help.github.com/articles/changing-a-remote-s-url/
 
+7) How do I delete a Git branch both locally and remotely?
+
+Executive Summary
+
+$ git push -d <remote_name> <branch_name>
+$ git branch -d <branch_name>
+
+Note that in most cases the remote name is origin.
+Delete Local Branch
+
+To delete the local branch use one of the following:
+
+$ git branch -d branch_name
+$ git branch -D branch_name
+
+Note: The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch. You could also use -D, which is an alias for --delete --force, which deletes the branch "irrespective of its merged status." [Source: man git-branch] 
+
+source: https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+8)change commit mesage 
+
+
+On the command line, navigate to the repository that contains the commit you want to amend.
+Type git commit --amend and press Enter.
+In your text editor, edit the commit message and save the commit. You can also add a co-author by adding a trailer to the commit. For more information, see "Creating a commit with multiple authors."
+Use the push --force command to force push over the old commit. 
+
+source: https://help.github.com/articles/changing-a-commit-message/
+
